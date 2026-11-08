@@ -1,0 +1,28 @@
+Source: python3-indi-client
+Section: python
+Priority: optional
+Maintainer: Matteo Piscitelli <matteo@matteopiscitelli.it>
+Build-Depends: debhelper-compat (= 13),
+ swig,
+ libindi-dev,
+ libcfitsio-dev,
+ libnova-dev,
+ libusb-1.0-0-dev,
+ zlib1g-dev
+Build-Depends-Indep:
+ python3-all,
+ python3-dev,
+ dh-python,
+ python3-setuptools
+Standards-Version: 4.7.0
+Homepage: https://github.com/indilib/pyindi-client
+Vcs-Git: https://github.com/indilib/pyindi-client.git
+Vcs-Browser: https://github.com/indilib/pyindi-client
+
+Package: python3-indi-client
+Architecture: any
+Multi-Arch: foreign
+Depends: ${python3:Depends}, ${misc:Depends}
+Provides: ${python3:Provides}
+Description: INDI Client Python API
+ INDI Python Client API, auto-generated from the official C++ API using SWIG.

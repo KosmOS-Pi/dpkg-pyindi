@@ -1,0 +1,5 @@
+python3-indi-client (2.3.0+kosmos-1~deb13) bookworm; urgency=low
+
+  * Repackage version 2.3.0 for KosmOS (trixie).
+
+ -- Matteo Piscitelli <matteo@matteopiscitelli.it>  Fri, 08 Nov 2026 12:14:52 +0000
